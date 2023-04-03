@@ -1,16 +1,38 @@
+import java.security.InvalidAlgorithmParameterException;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+import java.security.SignatureException;
+import java.security.spec.InvalidKeySpecException;
 import java.util.ArrayList;
 
 public class Blockchain {
-    public static ArrayList<Block> blockchain = new ArrayList<Block>();
+    public static ArrayList<Block> blockchain = new ArrayList<>();
 
-     static void blockchain_main() {
-        blockchain.add(new Block("First block", "0"));
-        blockchain.add(new Block("Second block", blockchain.get(blockchain.size() - 1).hash));
-        blockchain.add(new Block("Third block", blockchain.get(blockchain.size() - 1).hash));
-        blockchain.add(new Block("Fourth block", blockchain.get(blockchain.size() - 1).hash));
-        blockchain.add(new Block("Fifth block", blockchain.get(blockchain.size() - 1).hash));
-        System.out.print("Is chain valid?");
-        System.out.print(isChainValid());
+    static void blockchain_main() throws InvalidAlgorithmParameterException, NoSuchAlgorithmException, InvalidKeySpecException, SignatureException, InvalidKeyException {
+        // ALice create and signs a transaction
+        Block transaction = new Block("First block", "0");
+        ECDSA Alice = new ECDSA();
+        System.out.println("Transaction is created!");
+        Alice.sign(transaction);
+        System.out.println("Transaction is signed by Alice!");
+
+        // Bob has to verify
+        ECDSAVerify Bob = new ECDSAVerify();
+        if (Bob.verify(transaction)) {
+            System.out.println("Transaction is verified by Bob!");
+            blockchain.add(transaction);
+            System.out.println("Transaction added to blockchain!");
+        }else {
+            System.out.println("Transaction verification by Bob failed!");
+        }
+
+        // Check if chain is valid
+        if(isChainValid()){
+            System.out.println("Blockchain is valid!");
+        }
+        else{
+            System.out.println("Blockchain is Invalid!");
+        }
     }
 
     public static Boolean isChainValid() {

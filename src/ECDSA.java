@@ -4,11 +4,11 @@ import java.security.spec.ECGenParameterSpec;
 import java.util.Base64;
 
 public class ECDSA {
-    private static final String SPEC = "secp256k1";
+    private static final String SPEC = "secp256r1";
     private static final String ALGO = "SHA256withECDSA";
     private final PublicKey publicKey;
     private final PrivateKey privateKey;
-    ECDSA(PublicKey publicKey) throws NoSuchAlgorithmException, InvalidAlgorithmParameterException {
+    ECDSA() throws NoSuchAlgorithmException, InvalidAlgorithmParameterException {
         ECGenParameterSpec ecSpec = new ECGenParameterSpec(SPEC);
         KeyPairGenerator g = KeyPairGenerator.getInstance("EC");
         g.initialize(ecSpec, new SecureRandom());

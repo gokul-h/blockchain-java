@@ -8,7 +8,7 @@ import java.util.Base64;
 
 public class ECDSAVerify {
 
-    private boolean verify(Block b) throws NoSuchAlgorithmException, InvalidKeySpecException, InvalidKeyException, SignatureException {
+    public boolean verify(Block b) throws NoSuchAlgorithmException, InvalidKeySpecException, InvalidKeyException, SignatureException {
 
         Signature ecdsaVerify = Signature.getInstance(b.signatureAlgo);
         KeyFactory kf = KeyFactory.getInstance("EC");

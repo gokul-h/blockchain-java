@@ -5,20 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40a0d7d6-b2cc-4b45-be0a-22b523e459fe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blockchain.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Block.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blockchain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ECDSA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ECDSAVerify.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SHA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blockchain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blockchain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ECDSA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ECDSA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ECDSAVerify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ECDSAVerify.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +44,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/Gokul/Desktop/blockchain",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -74,7 +66,7 @@
       <workItem from="1680524429773" duration="227000" />
       <workItem from="1680524704054" duration="8287000" />
       <workItem from="1680539185970" duration="1685000" />
-      <workItem from="1680547077263" duration="2769000" />
+      <workItem from="1680547077263" duration="3635000" />
     </task>
     <servers />
   </component>
